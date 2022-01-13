@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --textColor:#fff;
+    --color-green: #37af65;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+body:before{
+    content: '';
+    background-image:url(https://wallpapercave.com/wp/wp2719096.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+.form-group{
+
+    margin-top: 50px;
+    background-color: rgba(23, 111, 212, 0.432);
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    opacity: .8;
+    padding: 50px;
+    color: var(--textColor);
+    transition: all .5s;
+}
+#title{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--textColor);
+
+}
+#description{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--textColor);
+}
+#name-label{
+    font-size: 1.2rem;
+    float: left;
+}
+#email-label{
+    font-size: 1.2rem;
+    float: left;
+}
+#number-label{
+    font-size: 1.2rem;
+    float: left;
+}
+#dropdown-label{
+    font-size: 1.2rem;
+    float: left;
+}
+.radio-group{
+    font-size: 1rem;
+}
+.checkbox-group{
+    margin-bottom: 20px;
+}
+.dropdown{
+    font-size: 1rem;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    font-size: 1rem;
+    margin: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+#dropdown
+{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+button{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background: var(--color-green);
+    color: var(--textColor);
+    border: none;
+    border-radius: 3px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .form-group{
+        width: 500px;
+        transition: all .5s;
+    }
+    #title{
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--textColor);
+                transition: all .5s;
+    
+    }
+    #description{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-align: center;
+        color: var(--textColor);
+                transition: all .5s;
+    }
+    #name-label{
+        font-size: 1rem;
+                transition: all .5s;
+
+    }
+    #email-label{
+        font-size: 1rem;
+                transition: all .5s;
+
+    }
+    #number-label{
+        font-size: 1rem;
+                transition: all .5s;
+
+    }
+    #dropdown-label{
+        font-size: 1rem;
+                transition: all .5s;
+
+    }
+    .radio-group{
+        font-size: .8rem;
+                transition: all .5s;
+    }
+    .checkbox-group{
+        margin-bottom: 15px;
+                transition: all .5s;
+    }
+
+}
+@media (max-width:576px) {
+    .form-group{
+        width: 400px;
+        transition: all .5s;
+    }
+    #title{
+        font-size: 1rem;
+        text-align: center;
+        color: var(--textColor);
+        transition: all .5s;
+    
+    }
+    #description{
+        font-size: .8rem;
+        margin-bottom: 20px;
+        text-align: center;
+        color: var(--textColor);
+        transition: all .5s;
+    }
+    #name-label{
+        font-size: .8rem;
+        transition: all .5s;
+
+    }
+    #email-label{
+        font-size: .8rem;
+        transition: all .5s;
+
+    }
+    #number-label{
+        font-size: .8rem;
+        transition: all .5s;
+
+    }
+    #dropdown-label{
+        font-size: .8rem;
+        transition: all .5s;
+
+    }
+    .radio-group{
+        font-size: .8rem;
+        transition: all .5s;
+    }
+    .checkbox-group{
+        margin-bottom: 15px;
+        transition: all .5s;
+    }
+}
+
