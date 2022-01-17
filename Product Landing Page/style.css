@@ -1,0 +1,256 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #eee;
+}
+:root{
+    --background : #DDDDDD;
+}
+#header{
+    height: 100px;
+    width: 100%;
+    background-color: #eee;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#header-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+#header-img{
+    margin: 10px;
+    width: 80px;
+    height:80px;
+}
+.nav-link{
+    display: inline-block;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    margin-right: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-link a:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+#form-section{
+    margin-top: 130px;
+    text-align: center;
+}
+#lbl-1{
+    font-size: 3rem;
+}
+input[type="email"]{
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    outline: none;
+}
+#submit{
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 150px;
+    background-color: orange;
+    color: black;
+    border: none;
+}
+#submit:hover{
+    background-color: chocolate;
+    cursor: pointer;
+
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container select{
+    margin-bottom: 300px;
+}
+.container section .grid{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container section .grid .desc{
+    text-align: center;
+}
+.container section .grid .desc h2{
+    float: left;
+}
+.container section .grid .desc p{
+    float: left;
+}
+#video{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    margin: 10px;
+}
+#pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tenor{
+    margin: 20px;
+    border: 1px solid #666;
+    width: 400px;
+}
+.product .level{
+    padding: 10px;
+    background-color: var(--background);
+    font-size: 1.2rem;
+    text-align: center;
+}
+.product h2{
+    margin-top: 20px;
+}
+.product{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.product ol li{
+    list-style: none;
+    margin: 10px;
+}
+.product .btn{
+    border: none;
+    border-radius: 3px;
+    padding: 0 20px;
+    background: #F1C40F;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px;
+}
+.product .btn:hover{
+    cursor:pointer;
+}
+i{
+    left: 350px;
+    margin-right: 30px;
+    font-size: 3rem;
+    color: chocolate;
+}
+#how-it-works{
+    text-align: center;
+}
+footer{
+    float: right;
+    background-color: var(--background);
+    width: 100%;
+    padding: 20px;
+}
+footer ul{
+    float: right;
+}
+footer span{
+    float: right;
+    color: rgb(112, 111, 111);
+}
+footer ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+footer ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width:938px) {
+    .nav-link{
+        font-size: 1.1rem;
+        margin-right: 70px;
+        transition: all .5s;
+    }
+    #lbl-1{
+        font-size: 2.5rem;
+        transition: all .5s;
+    }
+    #header-img{
+        margin: 7px;
+        width: 70px;
+        height:70px;
+        transition: all .5s;
+    }
+    #header-span{
+        font-size: 1.1rem;
+        transition: all .5s;
+    }
+    input[type="email"]{
+        width: 280px;
+        height: 40px;
+        transition: all .5s;
+    }
+    #submit{
+        width: 130px;
+        transition: all .5s;
+    }
+}
+@media (max-width:700px) {
+    #header{
+        text-align: center;
+
+    }
+    .nav-link{
+        display: flex;
+        flex-direction: row;
+        margin: 2px;
+        padding: 0px;
+        text-align: center;
+        transition: all .5s;
+    }
+    #lbl-1{
+        font-size: 2rem;
+        transition: all .5s;
+    }
+    input[type="email"]{
+        width: 250px;
+        height: 30px;
+        transition: all .5s;
+    }
+    #submit{
+        width: 110px;
+        transition: all .5s;
+    }
+    #pricing{
+        flex-direction: column;
+        transition: all .5s;
+    }
+}
+@media (max-width:600px) {
+    .grid .icon{
+        display: none;
+        transition: all .5s;
+    }
+    .container section .grid .desc h2{
+        float: none;
+        transition: all .5s;
+    }
+    .container section .grid .desc p{
+        float: none;
+        transition: all .5s;
+    }
+}

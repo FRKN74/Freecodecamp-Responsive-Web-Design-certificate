@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <span id="header-span"> <img src="logo.png" id="header-img" alt=""> Computer software</span>
+
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#product-detail"> Products</li></a>
+                <li class="nav-link"><a href="#video"> Videos</li></a>
+                <li class="nav-link"><a href="#pricing"> Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="form-section">
+        <label id="lbl-1">Search for products</label>
+        <form action="https://www.freecodecamp.org/email-submit" id="form">
+            <input type="email" name="email" id="email" placeholder="Enter your email adress" required/>
+            <br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+    
+    <div class="container">
+        <section id="product-detail">
+            <div class="grid">
+                <div class="icon"><i class="fa fa-laptop"></i></div>
+                <br>
+                <div class="desc">
+                    <h2>Lorem, ipsum dolor.</h2><br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae praesentium neque laboriosam hic quisquam corrupti?</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+                <br>
+                <div class="desc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae praesentium neque laboriosam hic quisquam corrupti?</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon" id="icon"><i class="fa fa-laptop-house"></i></div>
+                <br>
+                <div class="desc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae praesentium neque laboriosam hic quisquam corrupti?</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <iframe
+                id="video"
+                src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="product" id="tenor">
+                <div class="level">Computer Software</div>
+                <h2>$600</h2>
+                <ol>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="tenor">
+                <div class="level">Computer Software</div>
+                <h2>$600</h2>
+                <ol>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="tenor">
+                <div class="level">Computer Software</div>
+                <h2>$600</h2>
+                <ol>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <br>
+            <br>
+            <span>Copyright 2022, Original Trombones</span>
+        </footer>
+    </div>
+</body>
+</html>
