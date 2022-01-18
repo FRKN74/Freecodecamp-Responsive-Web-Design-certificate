@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-:root{
-
+body{
+    width: 100%;
 }
 #navbar{
     width: 100%;
@@ -55,24 +55,26 @@ nav ul li a:hover{
 .welcome-section h1{
     font-size: 3rem;
     color: black;
+    transition: all .5s;
 }
 .welcome-section p{
     font-size: 1.5rem;
     color: #666;
+    transition: all .5s;
 }
-
 .my-projects{
     width: 100%;
     height:auto;
     background-image: linear-gradient(to top,#8eacbb,#ffff52);
     text-align: center;
-    border-bottom: 1px solid black;
-    padding: 20px;
+    border-bottom: 1px solid #ffff52;
+    padding: 20px 20px;
 }
 .my-projects h2{
     text-align: center;
     text-decoration: underline;
-    padding: 10px;
+    font-size: 2rem;
+    transition: all .5s;
 }
 #showall{
     padding: 15px;
@@ -83,11 +85,12 @@ nav ul li a:hover{
 
 }
 .my-projects .proje{
-    width: 500px;
+    width: 400px;
     height: auto;
     position: relative;
     display: inline-block;
-    margin: 20px 50px;
+    flex-wrap: wrap;
+    margin: 50px 32px;
 
 }
 .my-projects .proje a img{
@@ -118,19 +121,18 @@ nav ul li a:hover{
 .contact-section h2{
     font-size: 3rem;
     color: white;
+    transition: all .5s;
 }
 .contact-section p{
     margin-top: 10px;
     font-size: 1.4rem;
     color: white;
-}
-.contact-section ul {
-    
+    transition: all .5s;
 }
 .contact-section ul li{
     display: inline-block;
     margin: 40px;
-    
+    transition: all .5s;
 }
 .contact-section ul li a{
     font-size: 1.5rem;
@@ -154,4 +156,53 @@ footer{
     align-items: center;
     padding: 0px 100px;
     color: white;
+    border-top: 3px solid #ffff52;
+}
+@media (max-width:1439px) {
+    .my-projects .proje .project-title{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:971px) {
+    nav ul li a{
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+    .welcome-section h1{
+        font-size: 2.5rem;
+    }
+    .welcome-section p{
+        font-size: 1.3rem;
+    }
+    .my-projects .proje{
+        width: 80%;
+        margin: 20px 32px;
+    
+    }
+    .my-projects h2{
+        font-size: 1.5rem;
+    }
+    .contact-section h2{
+        font-size: 2.5rem;
+    }
+    .contact-section p{
+        font-size: 1.2rem;
+    }
+    .contact-section ul li{
+        margin: 20px;
+    }
+    .contact-section ul li a{
+        font-size: 1.1rem;
+    }
+    footer{
+        justify-content: center;
+    }
+}
+@media (max-width:567px) {
+    .welcome-section h1{
+        font-size: 1.8rem;
+    }
+    .welcome-section p{
+        font-size: 1rem;
+    }
 }
