@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+}
+#navbar{
+    width: 100%;
+    height: 53px;
+    background-color: rgb(206, 153, 7);
+    position: relative;
+    top: 0;
+    left: 0;
+    position: fixed;
+    border-bottom: 1px solid #6666;
+    z-index: 1;
+}
+nav ul{
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    margin: 14px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    transition: all .5s;
+}
+nav ul li a:hover{
+    background-color: #666;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-section{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to top,#ffff52,#c7a500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-section h1{
+    font-size: 3rem;
+    color: black;
+}
+.welcome-section p{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.my-projects{
+    width: 100%;
+    height:auto;
+    background-image: linear-gradient(to top,#8eacbb,#ffff52);
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+.my-projects h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+#showall{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color:#102027;
+
+}
+.my-projects .proje{
+    width: 500px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 20px 50px;
+
+}
+.my-projects .proje a img{
+    width: 100%;
+    transition: all .5s;
+}
+.my-projects .proje a img:hover{
+    filter: opacity(.5);
+
+}
+.my-projects .proje .project-title{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffff52;
+    font-size: 1.8rem;
+    transition: all .5s;
+    padding: 10px;
+}
+.my-projects .proje .project-title:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 1);
+}
+.contact-section{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-image: linear-gradient(to top,#102027,#8eacbb);
+}
+.contact-section h2{
+    font-size: 3rem;
+    color: white;
+}
+.contact-section p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: white;
+}
+.contact-section ul {
+    
+}
+.contact-section ul li{
+    display: inline-block;
+    margin: 40px;
+    
+}
+.contact-section ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+
+}
+.contact-section ul li a:hover{
+    cursor: pointer;
+    color: red;
+    transform: translateY(10px);
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to top,#000,#102027);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    color: white;
+}
